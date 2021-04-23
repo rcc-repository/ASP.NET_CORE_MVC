@@ -18,33 +18,3 @@
 <a href="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/sobre/README.md"> 🚀 Sobre a evolução do ASP.NET </a>
 
 </br>
-
-<h1 align="center">
-  <img alt="ASP.NETCore" title="ASP.NETCore" src="AppCoreMvc/wwwroot/img/hist01.png" />
-</h1>
-
-
-<h1 align="center">
-  <img alt="ASP.NETCore" title="ASP.NETCore" src="AppCoreMvc/wwwroot/img/hist03.png" />
-</h1>
-
-<h1 align="center">
-  <img alt="ASP.NETCore" title="ASP.NETCore" src="AppCoreMvc/wwwroot/img/hist04.png" />
-</h1>
-
-<h1 align="center">
-  <img alt="ASP.NETCore" title="ASP.NETCore" src="AppCoreMvc/wwwroot/img/hist05.png" />
-</h1>
-
-<h1 align="center">
-  <img alt="ASP.NETCore" title="ASP.NETCore" src="AppCoreMvc/wwwroot/img/hist08.png" />
-</h1>
-
-<h1 align="center">
-  <img alt="ASP.NETCore" title="ASP.NETCore" src="AppCoreMvc/wwwroot/img/hist09.png" />
-</h1>
-
-<h1 align="center">
-  <img alt="ASP.NETCore" title="ASP.NETCore" src="AppCoreMvc/wwwroot/img/hist11.png" />
-</h1>
-
