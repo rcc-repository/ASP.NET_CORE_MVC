@@ -17,9 +17,6 @@
   <img alt="ASP.NETCore" title="ASP.NETCore" src="AppCoreMvc/wwwroot/img/hist01.png" />
 </h1>
 
-<h1 align="center">
-  <img alt="ASP.NETCore" title="ASP.NETCore" src="AppCoreMvc/wwwroot/img/hist02.png" />
-</h1>
 
 <h1 align="center">
   <img alt="ASP.NETCore" title="ASP.NETCore" src="AppCoreMvc/wwwroot/img/hist03.png" />
