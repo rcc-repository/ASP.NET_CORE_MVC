@@ -10,7 +10,7 @@
 </p>
 
 <h1 align="center">
-  <img alt="ASP.NETCore" title="ASP.NETCore" src="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/logoMVC.png" />
+  <img alt="ASP.NETCore" title="ASP.NETCore" width="50%" src="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/logoMVC.png" />
 </h1>
 
 </br>
