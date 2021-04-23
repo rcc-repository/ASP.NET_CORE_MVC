@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="ASP.NETCore" title="ASP.NETCore" src="ASP.NET_CORE_MVC/wwwroot/img/logo.png" />
+  <img alt="ASP.NETCore" title="ASP.NETCore" src="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/logo.png" />
 </h1>
 
 <p align="center">
@@ -9,17 +9,20 @@
   <a href="https://github.com/aspnet/">GitHub</a>
 </p>
 
+<h1 align="center">
+  <img alt="ASP.NETCore" title="ASP.NETCore" width="50%" src="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/logoMVC.png" />
+</h1>
+
 </br>
 
-## 🚀 Sobre a evolução do ASP.NET
+<a href="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/sobre"> 🚀 Sobre a evolução do ASP.NET </a>
+
+</br>
 
 <h1 align="center">
   <img alt="ASP.NETCore" title="ASP.NETCore" src="AppCoreMvc/wwwroot/img/hist01.png" />
 </h1>
 
-<h1 align="center">
-  <img alt="ASP.NETCore" title="ASP.NETCore" src="AppCoreMvc/wwwroot/img/hist02.png" />
-</h1>
 
 <h1 align="center">
   <img alt="ASP.NETCore" title="ASP.NETCore" src="AppCoreMvc/wwwroot/img/hist03.png" />
