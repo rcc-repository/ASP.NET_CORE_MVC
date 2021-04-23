@@ -15,7 +15,7 @@
 
 </br>
 
-<a href="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/sobre"> 🚀 Sobre a evolução do ASP.NET </a>
+<a href="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/sobre/README.md"> 🚀 Sobre a evolução do ASP.NET </a>
 
 </br>
 
