@@ -27,7 +27,7 @@
 
 </br>
 
-## :rocket: Sites docs:
+## :rocket: Docs:
 
 - [Documentação do ASP.NET](https://docs.microsoft.com/pt-br/aspnet/core/?utm_source=aspnet-start-page&utm_campaign=vside&view=aspnetcore-5.0)
 - [.NET Architecture Guides](https://dotnet.microsoft.com/learn/dotnet/architecture-guides?utm_source=aspnet-start-page&utm_campaign=vside)
