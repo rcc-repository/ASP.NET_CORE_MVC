@@ -33,3 +33,5 @@
 - [.NET Architecture Guides](https://dotnet.microsoft.com/learn/dotnet/architecture-guides?utm_source=aspnet-start-page&utm_campaign=vside)
 - [Início Rápido: Web ASP.NET no Azure](https://docs.microsoft.com/pt-br/azure/app-service/quickstart-dotnetcore?tabs=netcore31#launch-the-publish-wizard?utm_source=aspnet-start-page&utm_campaign=vside)
 - [Azure for .NET developers](https://docs.microsoft.com/pt-br/dotnet/azure/?utm_source=aspnet-start-page&utm_campaign=vside)
+- [SOLID](https://docs.microsoft.com/pt-br/dotnet/azure/?utm_source=aspnet-start-page&utm_campaign=vside)
+
