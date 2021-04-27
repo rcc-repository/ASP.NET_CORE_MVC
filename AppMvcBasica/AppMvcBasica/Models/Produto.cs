@@ -9,6 +9,7 @@ namespace AppMvcBasica.Models
 {
     public class Produto: Entity
     {
+        [DisplayName("Fornecedor")]
         public Guid FornecedorId { get; set; }
         
         [Required(ErrorMessage = "O Campo {0} é obrigatório !!!")]
@@ -26,6 +27,7 @@ namespace AppMvcBasica.Models
         [Required(ErrorMessage = "O Campo {0} é obrigatório !!!")]
         public decimal Valor { get; set; }
 
+        [Required(ErrorMessage = "O Campo {0} é obrigatório !!!")]
         public DateTime DataCadastro { get; set; }
 
         [DisplayName("Ativo ?")]

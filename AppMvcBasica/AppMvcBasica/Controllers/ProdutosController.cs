@@ -12,11 +12,11 @@ using Microsoft.AspNetCore.Authorization;
 namespace AppMvcBasica.Controllers
 {
     [Authorize]
-    public class FornecedoresController : Controller
+    public class ProdutosController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public FornecedoresController(ApplicationDbContext context)
+        public ProdutosController(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -24,7 +24,8 @@ namespace AppMvcBasica.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Fornecedores.ToListAsync());
+            var applicationDbContext = _context.Produtos.Include(p => p.fornecedor);
+            return View(await applicationDbContext.ToListAsync());
         }
 
         [AllowAnonymous]
@@ -35,32 +36,35 @@ namespace AppMvcBasica.Controllers
                 return NotFound();
             }
 
-            var fornecedor = await _context.Fornecedores
+            var produto = await _context.Produtos
+                .Include(p => p.fornecedor)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (fornecedor == null)
+            if (produto == null)
             {
                 return NotFound();
             }
 
-            return View(fornecedor);
+            return View(produto);
         }
 
         public IActionResult Create()
         {
+            ViewData["FornecedorId"] = new SelectList(_context.Fornecedores, "Id", "Nome");
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Fornecedor fornecedor)
+        public async Task<IActionResult> Create(Produto produto)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(fornecedor);
+                _context.Add(produto);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(fornecedor);
+            ViewData["FornecedorId"] = new SelectList(_context.Fornecedores, "Id", "Nome", produto.FornecedorId);
+            return View(produto);
         }
 
         public async Task<IActionResult> Edit(Guid? id)
@@ -70,19 +74,20 @@ namespace AppMvcBasica.Controllers
                 return NotFound();
             }
 
-            var fornecedor = await _context.Fornecedores.FindAsync(id);
-            if (fornecedor == null)
+            var produto = await _context.Produtos.FindAsync(id);
+            if (produto == null)
             {
                 return NotFound();
             }
-            return View(fornecedor);
+            ViewData["FornecedorId"] = new SelectList(_context.Fornecedores, "Id", "Nome", produto.FornecedorId);
+            return View(produto);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, Fornecedor fornecedor)
+        public async Task<IActionResult> Edit(Guid id, Produto produto)
         {
-            if (id != fornecedor.Id)
+            if (id != produto.Id)
             {
                 return NotFound();
             }
@@ -91,12 +96,12 @@ namespace AppMvcBasica.Controllers
             {
                 try
                 {
-                    _context.Update(fornecedor);
+                    _context.Update(produto);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!FornecedorExists(fornecedor.Id))
+                    if (!ProdutoExists(produto.Id))
                     {
                         return NotFound();
                     }
@@ -107,7 +112,8 @@ namespace AppMvcBasica.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(fornecedor);
+            ViewData["FornecedorId"] = new SelectList(_context.Fornecedores, "Id", "Nome", produto.FornecedorId);
+            return View(produto);
         }
 
         public async Task<IActionResult> Delete(Guid? id)
@@ -117,29 +123,30 @@ namespace AppMvcBasica.Controllers
                 return NotFound();
             }
 
-            var fornecedor = await _context.Fornecedores
+            var produto = await _context.Produtos
+                .Include(p => p.fornecedor)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (fornecedor == null)
+            if (produto == null)
             {
                 return NotFound();
             }
 
-            return View(fornecedor);
+            return View(produto);
         }
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
-            var fornecedor = await _context.Fornecedores.FindAsync(id);
-            _context.Fornecedores.Remove(fornecedor);
+            var produto = await _context.Produtos.FindAsync(id);
+            _context.Produtos.Remove(produto);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool FornecedorExists(Guid id)
+        private bool ProdutoExists(Guid id)
         {
-            return _context.Fornecedores.Any(e => e.Id == id);
+            return _context.Produtos.Any(e => e.Id == id);
         }
     }
 }

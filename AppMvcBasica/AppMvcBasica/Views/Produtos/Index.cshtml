@@ -1,28 +1,31 @@
-﻿@model IEnumerable<AppMvcBasica.Models.Fornecedor>
+﻿@model IEnumerable<AppMvcBasica.Models.Produto>
 
 @{
-    ViewData["Title"] = "Lista de Fornecedores";
+    ViewData["Title"] = "Lista de Produtos";
 }
 
 <h1 class="text-center">@ViewData["Title"]</h1>
 
 <p>
-    <a class="btn btn-info"  asp-action="Create">Novo Fornecedor</a>
+    <a class="btn btn-info"  asp-action="Create">Novo Produto</a>
 </p>
-<table class="table table-hover">
+<table class="table table-hover" >
     <thead class="thead-dark">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Nome)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Documento)
+                @Html.DisplayNameFor(model => model.Valor)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TipoFornecedor)
+                @Html.DisplayNameFor(model => model.DataCadastro)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Ativo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fornecedor)
             </th>
             <th></th>
         </tr>
@@ -34,13 +37,16 @@
                 @Html.DisplayFor(modelItem => item.Nome)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Documento)
+                @Html.DisplayFor(modelItem => item.Valor)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.TipoFornecedor)
+                @Html.DisplayFor(modelItem => item.DataCadastro)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Ativo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fornecedor.Nome)
             </td>
             <td align="right">
                 <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Editar</a> 
