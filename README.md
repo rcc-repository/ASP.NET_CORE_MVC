@@ -34,4 +34,7 @@
 - [Início Rápido: Web ASP.NET no Azure](https://docs.microsoft.com/pt-br/azure/app-service/quickstart-dotnetcore?tabs=netcore31#launch-the-publish-wizard?utm_source=aspnet-start-page&utm_campaign=vside)
 - [Azure for .NET developers](https://docs.microsoft.com/pt-br/dotnet/azure/?utm_source=aspnet-start-page&utm_campaign=vside)
 - [SOLID](https://www.eduardopires.net.br/2015/01/solid-teoria-e-pratica/)
+- [GitHub ASP.NET](https://github.com/aspnet/)
+
+
 
