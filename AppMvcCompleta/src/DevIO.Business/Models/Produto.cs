@@ -19,6 +19,6 @@ namespace DevIO.Business.Models
         public bool Ativo { get; set; }
         
         //EF Relation
-        public Fornecedor fornecedor { get; set; }
+        public Fornecedor Fornecedor { get; set; }
     }
 }
