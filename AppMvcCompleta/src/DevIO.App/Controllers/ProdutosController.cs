@@ -69,6 +69,7 @@ namespace DevIO.App.Controllers
                 return View(produtoViewModel);
 
             produtoViewModel.Imagem = imgPrefixo + produtoViewModel.ImagemUpload.FileName;
+            produtoViewModel.DataCadastro = DateTime.Now;
 
             await _produtoRepository.Adicionar(_mapper.Map<Produto>(produtoViewModel));
 
@@ -144,7 +145,7 @@ namespace DevIO.App.Controllers
             if (arquivo.Length <= 0)
                 return false;
 
-            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imagens", prefixo = arquivo.FileName);
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imagens", prefixo + arquivo.FileName);
 
             if (System.IO.File.Exists(path))
             {

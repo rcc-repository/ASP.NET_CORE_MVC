@@ -6,6 +6,11 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\imagens\caa4dc17-d128-4b09-91b0-a6a9fd1d04dc_assinatura Rodrigo.jpg" />
+    <Content Remove="wwwroot\imagens\Resolver conflitos.png" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="automapper.extensions.microsoft.dependencyinjection" Version="6.1.0" />
