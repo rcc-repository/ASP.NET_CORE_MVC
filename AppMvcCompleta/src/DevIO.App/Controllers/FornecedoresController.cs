@@ -86,7 +86,7 @@ namespace DevIO.App.Controllers
             var fornecedor = _mapper.Map<Fornecedor>(fornecedorViewModel);
             await _fornecedorRepository.Atualizar(fornecedor);
 
-            return View(fornecedorViewModel);
+            return View("Index");
         }
 
         public async Task<IActionResult> Delete(Guid id)
