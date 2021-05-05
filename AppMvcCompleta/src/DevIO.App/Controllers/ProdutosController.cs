@@ -93,10 +93,30 @@ namespace DevIO.App.Controllers
             if (id != produtoViewModel.Id)
                 return NotFound();
 
+            var produtoAtualizar = await ObterProduto(id);
+
+            produtoViewModel.Fornecedor = produtoAtualizar.Fornecedor;
+            produtoViewModel.Imagem = produtoAtualizar.Imagem;
+
             if (!ModelState.IsValid)
                 return View(produtoViewModel);
 
-            await _produtoRepository.Atualizar(_mapper.Map<Produto>(produtoViewModel));
+            if (produtoViewModel.ImagemUpload != null)
+            {
+                var imgPrefixo = Guid.NewGuid() + "_";
+
+                if (!await UploadArquivo(produtoViewModel.ImagemUpload, imgPrefixo))
+                    return View(produtoViewModel);
+
+                produtoAtualizar.Imagem = imgPrefixo + produtoViewModel.ImagemUpload.FileName;
+            }
+
+            produtoAtualizar.Nome = produtoViewModel.Nome;
+            produtoAtualizar.Descricao = produtoViewModel.Descricao;
+            produtoAtualizar.Ativo = produtoViewModel.Ativo;
+            produtoAtualizar.Valor = produtoViewModel.Valor;
+
+            await _produtoRepository.Atualizar(_mapper.Map<Produto>(produtoAtualizar));
 
             return RedirectToAction("Index");
         }
