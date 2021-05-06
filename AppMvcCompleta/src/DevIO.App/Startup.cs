@@ -17,6 +17,8 @@ using DevIO.Data.Context;
 using DevIO.Business.Interfaces;
 using DevIO.Data.Repository;
 using AutoMapper;
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
 
 namespace DevIO.App
 {
@@ -29,12 +31,10 @@ namespace DevIO.App
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.Configure<CookiePolicyOptions>(options =>
             {
-                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
@@ -55,7 +55,12 @@ namespace DevIO.App
 
             services.AddAutoMapper(typeof(Startup));
             
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc(option =>
+            {
+                option.ModelBindingMessageProvider.SetNonPropertyValueMustBeANumberAccessor(() => "O Valor deve ser numérico !!!");
+                option.ModelBindingMessageProvider.SetValueMustBeANumberAccessor((x) => "O Valor deve ser numérico !!!");
+            }
+            ).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddScoped<MeuDbContext>();
             services.AddScoped<IProdutoRepository, ProdutoRepository>();
@@ -63,7 +68,6 @@ namespace DevIO.App
             services.AddScoped<IEnderecoRepository, EnderecoRepository>();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
@@ -74,7 +78,6 @@ namespace DevIO.App
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
@@ -83,6 +86,16 @@ namespace DevIO.App
             app.UseCookiePolicy();
 
             app.UseAuthentication();
+
+            var defaultCulture = new CultureInfo("pt-BR");
+            var localizationOptions = new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture(defaultCulture),
+                SupportedCultures = new List<CultureInfo> { defaultCulture },
+                SupportedUICultures = new List<CultureInfo> { defaultCulture }
+            };
+
+            app.UseRequestLocalization(localizationOptions);
 
             app.UseMvc(routes =>
             {
