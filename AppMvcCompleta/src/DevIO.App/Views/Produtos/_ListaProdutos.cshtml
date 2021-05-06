@@ -1,26 +1,19 @@
-﻿@using DevIO.App.Extensions
-@model IEnumerable<DevIO.App.ViewModels.FornecedorViewModel>
-
-@{
-    ViewData["Title"] = "Lista de Fornecedores";
-}
-
-<h3 style="padding-top: 50px">@ViewData["Title"]</h3>
-
-<h3 style="padding-top: 15px">
-    <a class="btn btn-success" asp-action="Create">Novo Fornecedor</a>
-</h3>
-
-<br />
+﻿@model IEnumerable<DevIO.App.ViewModels.ProdutoViewModel>
 
 <table class="table table-hover">
     <thead style="background-color: lightblue;">
         <tr>
             <th>
+
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Nome)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Documento)
+                @Html.DisplayNameFor(model => model.Fornecedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Valor)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Ativo)
@@ -33,10 +26,16 @@
         {
             <tr>
                 <td>
+                    <img src="~/imagens/@item.Imagem" alt="@item.Imagem" style="width: 70px; height: 80px" />
+                </td>
+                <td>
                     @Html.DisplayFor(modelItem => item.Nome)
                 </td>
                 <td>
-                    @this.FormataDocumento(item.TipoFornecedor, item.Documento)
+                    @Html.DisplayFor(modelItem => item.Fornecedor.Nome)
+                </td>
+                <td>
+                    @item.Valor.ToString("C")
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Ativo)

@@ -37,6 +37,7 @@ namespace DevIO.App.ViewModels
         public decimal Valor { get; set; }
 
         [ScaffoldColumn(false)]
+        [DisplayName("Data de Cadastro")]
         public DateTime DataCadastro { get; set; }
 
         [DisplayName("Ativo ?")]

@@ -6,12 +6,17 @@
 
     <h3 style="padding-top: 50px">@ViewData["Title"]</h3>
 
-<hr />
-<div class="row">
-    <div class="col-md-10">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
+    <hr />
+
+<form asp-action="Edit">
+
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+
             <div class="form-group">
                 <label asp-for="Nome" class="control-label"></label>
                 <input asp-for="Nome" class="form-control" />
@@ -22,24 +27,32 @@
                 <input asp-for="Documento" class="form-control" />
                 <span asp-validation-for="Documento" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="TipoFornecedor" class="control-label"></label>
-                <div>
-                    <input type="radio" value="1" asp-for="TipoFornecedor" checked="@Convert.ToInt32(Model.TipoFornecedor) == 1" /> Pessoa Física <br />
-                    <input type="radio" value="2" asp-for="TipoFornecedor" checked="@Convert.ToInt32(Model.TipoFornecedor) == 2" /> Pessoa Jurídica
+        </div>
+
+        <div class="form-group col-md-6">
+                <div class="form-group">
+                    <label asp-for="TipoFornecedor" class="control-label"></label>
+                    <div>
+                        <input type="radio" value="1" asp-for="TipoFornecedor" checked="@(Model.TipoFornecedor == 1)" /> Pessoa Física <br />
+                        <input type="radio" value="2" asp-for="TipoFornecedor" checked="@(Model.TipoFornecedor == 2)" /> Pessoa Jurídica
+                    </div>
                 </div>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Ativo" /> @Html.DisplayNameFor(model => model.Ativo)
-                </label>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Salvar" class="btn btn-success" />
-                <a class="btn btn-info" asp-action="Index">Voltar</a>
-            </div>
-        </form>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="Ativo" /> @Html.DisplayNameFor(model => model.Ativo)
+                    </label>
+                </div>
+        </div>
     </div>
+
+    <div class="form-group">
+        <input type="submit" value="Salvar" class="btn btn-success" />
+        <a class="btn btn-info" href="javascript:window.history.back()">Voltar</a>
+    </div>
+</form>
+
+<div>
+    <partial name="_DetalhesEndereco" />
 </div>
 
 @section Scripts {
