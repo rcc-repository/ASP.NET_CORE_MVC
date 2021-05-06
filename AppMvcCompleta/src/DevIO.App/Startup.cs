@@ -19,6 +19,8 @@ using DevIO.Data.Repository;
 using AutoMapper;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.DataAnnotations;
+using DevIO.App.Extensions;
 
 namespace DevIO.App
 {
@@ -66,6 +68,7 @@ namespace DevIO.App
             services.AddScoped<IProdutoRepository, ProdutoRepository>();
             services.AddScoped<IFornecedorRepository, FornecedorRepository>();
             services.AddScoped<IEnderecoRepository, EnderecoRepository>();
+            services.AddSingleton<IValidationAttributeAdapterProvider, MoedaValidationAttributeAdapterProvider>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
