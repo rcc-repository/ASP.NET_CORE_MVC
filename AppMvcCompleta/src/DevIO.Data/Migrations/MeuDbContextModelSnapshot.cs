@@ -41,7 +41,6 @@ namespace DevIO.Data.Migrations
                         .HasColumnType("varchar(250)");
 
                     b.Property<string>("Estado")
-                        .IsRequired()
                         .HasColumnType("varchar(50)");
 
                     b.Property<Guid>("FornecedorId");
