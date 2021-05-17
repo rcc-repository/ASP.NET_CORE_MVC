@@ -10,7 +10,7 @@
 <vc:Summary></vc:Summary>
 
 <h3 style="padding-top: 15px">
-    <a class="btn btn-success" asp-action="Create">Novo Fornecedor</a>
+    <a class="btn btn-success" supress-by-claim-name="Fornecedor" supress-by-claim-value="Adicionar" asp-action="Create">Novo Fornecedor</a>
 </h3>
 
 <br />
@@ -45,8 +45,8 @@
                 </td>
                 <td align="right">
                     <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id"><spam class="fa fa-search"></spam></a>
-                    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id"><spam class="fa fa-pencil-alt"></spam></a>
-                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id"><spam class="fa fa-trash"></spam></a>
+                    <a class="btn btn-warning" supress-by-claim-name="Fornecedor" supress-by-claim-value="Editar" asp-action="Edit" asp-route-id="@item.Id"><spam class="fa fa-pencil-alt"></spam></a>
+                    <a class="btn btn-danger" supress-by-claim-name="Fornecedor" supress-by-claim-value="Excluir" asp-action="Delete" asp-route-id="@item.Id"><spam class="fa fa-trash"></spam></a>
                 </td>
             </tr>
         }
