@@ -47,15 +47,6 @@ Cadastrado de Fornecedores e Produtos;
 	[] Outros...
 
 <p align="left">
-  <a href="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/packages.png"> 💻 ### Packages instalados </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/packages.png"> <b>💻 Packages instalados</b> </a>
 </p>
-
-
-
-<h1 align="left">
-  <img alt="ASP.NETCore" title="ASP.NETCore" width="100%" src="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/packages.png" />
-</h1>
-
-
-
 
