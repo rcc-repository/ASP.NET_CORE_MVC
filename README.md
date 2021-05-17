@@ -40,9 +40,17 @@
 
 </br>
 
-## :rocket: Aplicação Desenvolvida:
+## 💻 Projeto
 
-- Packages instalados:
+Cadastrado de Fornecedores e Produtos;
+
+### Aprendizados:
+	[] Projeto desenvolvido em 3 camadas (APP, Business e Data);
+	[] Uso de Repositórios / EF;
+	[] Entity Framework Core
+	[] Injeção de Dependência
+
+### Packages instalados:
 
 <h1 align="center">
   <img alt="ASP.NETCore" title="ASP.NETCore" width="70%" src="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/sobre/Packages.png" />
