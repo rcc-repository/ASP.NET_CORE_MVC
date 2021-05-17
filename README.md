@@ -46,7 +46,12 @@ Cadastrado de Fornecedores e Produtos;
 	[] Segurança com ASP.NET Identity;
 	[] Outros...
 
-### Packages instalados:
+<p align="left">
+  <img alt="ASP.NETCore" 
+       title="ASP.NETCore" width="100%" src="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/packages.png"> 💻 ### Packages instalados: </>
+</p>
+
+
 
 <h1 align="left">
   <img alt="ASP.NETCore" title="ASP.NETCore" width="100%" src="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/packages.png" />
