@@ -34,7 +34,7 @@
   <a href="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/identity/README.md"> 💻 Identity </a>
 </p>
 
-## 💻 Projeto
+## :rocket: Projeto
 
 <b>Cadastrado de Fornecedores e Produtos;</b>
 
@@ -48,4 +48,6 @@
 <p align="left">
   <a href="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/packages.png"> <b>💻 Packages instalados</b> </a>
 </p>
+
+## 💻 Layout
 
