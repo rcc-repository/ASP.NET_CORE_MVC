@@ -38,7 +38,6 @@
 
 <b>Cadastrado de Fornecedores e Produtos;</b>
 
-### Principais aprendizados:
 	[] Projeto desenvolvido em 3 camadas (APP, Business e Data);
 	[] Uso de Repositórios;
 	[] Injeção de Dependência;
