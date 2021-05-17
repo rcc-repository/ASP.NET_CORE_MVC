@@ -49,26 +49,8 @@
   <a href="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/packages.png"> <b>💻 Packages instalados</b> </a>
 </p>
 
-## 💻 Layout
+## 💻 Layout pagina inicial:
 
 <h1 align="center">
-  <img alt="ASP.NETCore" title="ASP.NETCore" width="70%" src="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/Layout/page_01.png" />
+  <img alt="ASP.NETCore" title="ASP.NETCore" width="100%" src="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/Layout/page_01.png" />
 </h1>
-
-<h1 align="center">
-  <img alt="ASP.NETCore" title="ASP.NETCore" width="70%" src="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/Layout/page_02.png" />
-</h1>
-
-<h1 align="center">
-  <img alt="ASP.NETCore" title="ASP.NETCore" width="70%" src="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/Layout/page_03.png" />
-</h1>
-
-<h1 align="center">
-  <img alt="ASP.NETCore" title="ASP.NETCore" width="70%" src="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/Layout/page_04.png" />
-</h1>
-
-<h1 align="center">
-  <img alt="ASP.NETCore" title="ASP.NETCore" width="70%" src="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/Layout/page_05.png" />
-</h1>
-
-
