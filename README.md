@@ -15,8 +15,6 @@
 </h1>
 -->
 
-</br>
-
 ## :rocket: Docs:
 
 - [Documentação do ASP.NET](https://docs.microsoft.com/pt-br/aspnet/core/?utm_source=aspnet-start-page&utm_campaign=vside&view=aspnetcore-5.0)
@@ -25,8 +23,6 @@
 - [Azure for .NET developers](https://docs.microsoft.com/pt-br/dotnet/azure/?utm_source=aspnet-start-page&utm_campaign=vside)
 - [FluentValidation](https://fluentvalidation.net/)
 - [SOLID](https://www.eduardopires.net.br/2015/01/solid-teoria-e-pratica/)
-
-</br>
 
 ## :rocket: Aprendizados:
 
