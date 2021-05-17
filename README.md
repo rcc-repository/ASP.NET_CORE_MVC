@@ -46,9 +46,10 @@ Cadastrado de Fornecedores e Produtos;
 
 ### Aprendizados:
 	[] Projeto desenvolvido em 3 camadas (APP, Business e Data);
-	[] Uso de Repositórios / EF;
-	[] Entity Framework Core
-	[] Injeção de Dependência
+	[] Uso de Repositórios;
+	[] Injeção de Dependência;
+	[] Entity Framework Core;
+	[] Segurança com ASP.NET Identity;
 
 ### Packages instalados:
 
