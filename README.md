@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="ASP.NETCore" title="ASP.NETCore" src="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/logo.png" />
+  <img alt="ASP.NETCore" title="ASP.NETCore" src="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/logoMVC.png" />
 </h1>
 
 <p align="center">
