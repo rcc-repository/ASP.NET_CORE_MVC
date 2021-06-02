@@ -9,12 +9,6 @@
   <a href="https://github.com/aspnet/">GitHub</a>
 </p>
 
-<!--
-<h1 align="center">
-  <img alt="ASP.NETCore" title="ASP.NETCore" width="50%" src="https://github.com/rcc-repository/ASP.NET_CORE_MVC/blob/main/wwwroot/img/logoMVC.png" />
-</h1>
--->
-
 ## :rocket: Docs:
 
 - [Documentação do ASP.NET](https://docs.microsoft.com/pt-br/aspnet/core/?utm_source=aspnet-start-page&utm_campaign=vside&view=aspnetcore-5.0)
