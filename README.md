@@ -15,6 +15,7 @@
 - [.NET Architecture Guides](https://dotnet.microsoft.com/learn/dotnet/architecture-guides?utm_source=aspnet-start-page&utm_campaign=vside)
 - [Início Rápido: Web ASP.NET no Azure](https://docs.microsoft.com/pt-br/azure/app-service/quickstart-dotnetcore?tabs=netcore31#launch-the-publish-wizard?utm_source=aspnet-start-page&utm_campaign=vside)
 - [Azure for .NET developers](https://docs.microsoft.com/pt-br/dotnet/azure/?utm_source=aspnet-start-page&utm_campaign=vside)
+- [Entity Framework Core](https://docs.microsoft.com/pt-br/ef/core/)
 - [FluentValidation](https://fluentvalidation.net/)
 - [SOLID](https://www.eduardopires.net.br/2015/01/solid-teoria-e-pratica/)
 
